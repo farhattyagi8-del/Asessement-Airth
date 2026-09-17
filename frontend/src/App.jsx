@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-const API_URL = 'http://localhost:3001';
+// const API_URL = 'http://localhost:3001';
+const API_URL = 'https://asessement-airth.onrender.com';
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -16,9 +17,7 @@ function App() {
   const [error, setError] = useState('');
   const [creating, setCreating] = useState(false);
 
-  // =========================
-  // GET ALL JOBS
-  // =========================
+
   const fetchJobs = async () => {
     try {
       setLoading(true);
